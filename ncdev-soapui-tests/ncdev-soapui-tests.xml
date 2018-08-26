@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8f2e6024-7da1-4c43-b458-b67ed674c753" activeEnvironment="Default" name="ncdev" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="WsdlSettings@cache-wsdls">false</con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="6a1ae9b5-3801-49d0-851b-96545e2f1037" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root HTTPS" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/operator_root/cacerts" id="8c085e5f-5c6a-43d3-a4cb-0f7bfd22c2d1">
+      <con:description>cacerts</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="5effccfa-2b07-4d1b-87a8-2314d9021d41" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="c076c229-d308-463a-bcff-de8d8d2f2ecb" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="084eed4c-5e21-47a8-a92e-f96869cc5a42" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root HTTP" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>http://grs-preprodkubemaster01:30401</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/operator_root/cacerts" id="01463e69-7cae-4c04-b91c-f297ab81e4a3">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="8ddb71e6-4e0f-41a4-b294-fc36010c1385" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:grs="http://grs-preprodkubemaster01/">grs:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f0ddf745-9ce2-491c-b342-1c0b7c380d44" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://${#Project#URL}:30401</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://grs-preprodkubemaster01/</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="5fd5cf75-cf2b-44e3-9b96-05638e91a779" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise HTTPS" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30420</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/enterprise/cacerts" id="ff526d68-fa5d-4241-b2f9-0b8401f4327c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="2bcc2177-7be6-4d6c-9b27-186eff4a402f" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/cacerts">cac:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="495fa441-8808-405d-aebd-280ef4fa358b" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="18a5cf63-0243-41aa-bb4d-afb41dc5a722" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise HTTP" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints/>
+    <con:resource name="" path="/.well-known/est/enterprise/cacerts" id="28ddb820-8b47-4439-befe-46d26a8f4dd1">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="4b71e518-a26b-4484-9d22-0571c659e8cc" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="6600719c-3bf8-4cc0-b98a-01eb8e8b0a17" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://${#Project#URL}:30421</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="7d5a42b7-2d8b-44d4-bc01-97d8e01da2eb" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator HTTPS" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/operator/cacerts" id="954cbb27-96d0-400f-89da-5ebf4b0445e5">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="8b9509ef-e52e-4a65-a4e1-640cb739b5a2" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/cacerts">cac:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="3a460b7b-1764-4c7b-8d9c-c13c6f8b8d72" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="e574d390-bbf9-4814-978f-ecef05a9d7f5" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator HTTP" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>http://grs-preprodkubemaster01:30401</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/operator/cacerts" id="f6bba5dd-b5e5-4b0c-a04b-70d21c874d04">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="40888a43-744b-4cfe-97fa-2c3f1d5b7243" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>500 404</con:status>
+          <con:params/>
+          <con:element xmlns:cac="http://grs-preprodkubemaster01/.well-known/est/cacerts">cac:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="977cbbca-70a1-4e73-8d15-b6d91c55a3b8" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://${#Project#URL}:30411</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="e611ab77-2cd6-4c24-8f46-2b97e045f6e2" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root SimpleEnroll" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" id="7cbde6c7-749f-45ad-90b1-85ac332846a9">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="732b38f2-84c2-415a-aa45-725d0c9b8942" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/pkcs10</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>400 500</con:status>
+          <con:params/>
+          <con:element xmlns:sim="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll">sim:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="00a4801e-bfd8-4d12-afdc-163dc1cee2f4" mediaType="text/xml" sslKeystore="" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
+  &lt;con:entry key="Content-Type" value="application/pkcs10"/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+          <con:request>MIIBPzCBxQIBADAWMRQwEgYDVQQDEwtQS0kgUm9sZSBSQTB2MBAGByqGSM49AgEG
+BSuBBAAiA2IABDYLEIMC+d6ErcUtWGIjOE+mx5umOuLDfUo5CeLVSTnQN8NHPe7q
+noC5l275gyWoWqXWzam06Ex4KK8DPx9JB8sdr+C4KPllpou5Tn4DhCixtnmHk73v
+CFnfLc79I4pVsKAwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFMgUWio/KSTJ
+Y18usI7hYq1jFowlMAwGCCqGSM49BAMDBQADZwAwZAIwXhSgW3zbWgruiA/7e4Pk
+fHnhB1rnR8c9EW7RsXzn54nRtmyhcyA6yNMjV3Ps7pDqAjA5daYbF0D/e2y/RfXe
+O+5kFG9M/873LvUV4S0BZF/p5RXIalJv39Zs+P3sUFuKzj0=</con:request>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="b8eca7e5-0654-48f9-9b48-21b95f16f714" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise SimpleEnroll" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30420</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" id="03c938f7-d494-4a0c-b705-cdc23033e6d5">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="9257e2cc-5ac1-4f63-a101-f09eaae07bbf" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/pkcs10</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>400 500 404</con:status>
+          <con:params/>
+          <con:element xmlns:sim="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll">sim:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="8fb265f4-1fa7-4fc4-b275-5366ce481ee9" mediaType="text/xml" sslKeystore="" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
+  &lt;con:entry key="Content-Type" value="application/pkcs10"/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="5f4a4179-f525-4cec-aaab-3e56dbf72887" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator SimpleEnroll" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" id="f17ea7e4-3fb3-4806-b924-c37b1aedc66f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="81a1c074-0a72-4b2a-b9af-a7a1fea6e988" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/pkcs10</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="c9a9d083-ad60-4f47-9336-d71dd58d4c53" mediaType="text/xml" sslKeystore="" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
+  &lt;con:entry key="Content-Type" value="application/pkcs10"/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+          <con:request>MIIBPzCBxQIBADAWMRQwEgYDVQQDEwtQS0kgUm9sZSBSQTB2MBAGByqGSM49AgEG
+BSuBBAAiA2IABHZmlCOf4w7i/XzNSLUJLHinBbl1IUZum7GILSzOtm3m6KMDRcHq
+/kPVjRHfv5PopWVT4iH3UMzKoQkGst0Sd6iKcD8EHm4Xzo5zcKKEAsmBicj4p3/b
+ErLq5Mj9NhSanqAwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFCU8Yg7Alx+Y
+G8rFc7jo5gHbW0dzMAwGCCqGSM49BAMDBQADZwAwZAIwXai/MiQ2lHkgJuBwbCfq
+aPWzTnaOCZ4tuRsI2z/wKpyHG0qlsm51yepj/nfHOnJSAjBTdkneFATb/kGjvj44
+knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="239a8c11-974c-43d4-8dbc-5e066c696c09" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root Application Service PKI CA" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" id="123f15dd-b9ba-48a3-8a16-7e705517e2fc">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="869361ab-73d6-43e1-8e53-8a2368e73d08" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts">cac:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f6b3145f-c571-4afc-bb92-0fb97ad776aa" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="540d23bb-332c-4179-a3fd-9c4593bd0151" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator Application Service PKI CA" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" id="2207f7ce-b0fe-4b55-8ae0-5bc1f66d8058">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="dfe48d86-74c7-4816-90d5-9c8835575f2a" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts">cac:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="45e1e152-a32b-4513-a1dc-dda5bce22754" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="e8b0f5b0-4d84-4962-ba18-9b737f10795e" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise Application Service PKI CA" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01:30420</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" id="aeee22be-ed5f-4595-9b5b-c22a967078ce">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="82108ec7-8bf5-434e-953c-214e4fb5dbc2" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="bbe283f3-b236-4157-b3db-a8321cdace98" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="f4ca62b6-a980-4c59-a8e3-2ee7dad215aa" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root Application Service Root" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20Root/cacerts" id="572ec9aa-fa50-4260-8f16-20e94f086109">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="35b8b88b-09db-4f9d-bbfc-44cf55afb8d6" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="74ea735d-14b7-42c9-b40a-8d597bf82c3d" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="ead67cfa-a04f-444a-87ed-18e6209f59c9" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator Application Service Root" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20Root/cacerts" id="22f10b1a-adbd-4348-9bae-f4da63549320">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="ab79baa7-803f-49fa-b2a0-813bca5f145b" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="bc717222-a02a-407e-83d0-07218bbf333b" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="6567764c-f92d-4291-97fd-5c3ce5c54a97" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise Application Servie Root" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:endpoints>
+      <con:endpoint>https://grs-preprodkubemaster01:30420</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/.well-known/est/Application%20Service%20Root/cacerts" id="8af27eb0-9d7b-4666-a8ef-9a8ffd9aaffc">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="0872530e-84bf-4f00-8fef-bb4810185c29" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/pkcs7-mime</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="6493762c-f415-4fb3-b2bc-ac6387f5e29c" mediaType="application/json" sslKeystore="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="54fa1269-0ef4-4979-b9a6-46cc2987e3f7" name="MainTestSuite">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="9bca0035-5a50-4687-82bb-2329f0c3bea2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="create-output-dir" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="create-output-dir" id="40589682-96ba-487d-b7fc-4a9d7d25b520">
+        <con:settings/>
+        <con:config>
+          <script>def dir = new File("c:\\soapuidumps")
+
+if (dir.exists()) {
+	dir.deleteDir()
+}
+
+dir.mkdir()</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="1a102db5-6966-4d0d-9ad2-6212a2407325" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="1. cacerts-root-ssl" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="cacerts-root-ssl" id="b3dc6a10-f343-427d-baab-9652170269ab">
+        <con:settings/>
+        <con:config service="Root HTTPS" resourcePath="/.well-known/est/operator_root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="cacerts-root-ssl" id="c076c229-d308-463a-bcff-de8d8d2f2ecb" mediaType="application/json" sslKeystore="ncdev-R-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operatorroot_ssl.p7b</con:setting>
+              <con:setting id="WsdlSettings@pretty-print-response-xml">false</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="62ab0e19-45f0-41b2-be38-414f816f8ffa" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:setupScript/>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="807671eb-4ee3-4cb7-828c-1c686e240de5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="2. cacerts-root-nossl" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="cacerts-root-nossl" id="d7856aa4-6c94-49b5-a706-25447123e9c7">
+        <con:settings/>
+        <con:config service="Root HTTP" resourcePath="/.well-known/est/operator_root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="cacerts-root-nossl" id="f0ddf745-9ce2-491c-b342-1c0b7c380d44" mediaType="application/json" sslKeystore="">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operatorroot_nossl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>http://${#Project#URL}:30401</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://grs-preprodkubemaster01/</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="95868e89-3313-4950-aedb-68ece06b2456" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="c1c485cc-cbfd-4e57-abbc-e61387a89456" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="3. cacerts-operator-nossl" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="cacerts-operator-nossl" id="24a7b64f-5dfc-4aad-a5c2-0d3735e9fc6c">
+        <con:settings/>
+        <con:config service="Operator HTTP" resourcePath="/.well-known/est/operator/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="cacerts-operator-nossl" id="977cbbca-70a1-4e73-8d15-b6d91c55a3b8" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator_nossl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>http://${#Project#URL}:30411</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="7c840bba-3c91-4dab-b31d-79fb43583682" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="8f0cb64d-7370-4d3c-9aba-0e49166906f0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4. cacerts-operator-ssl" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="cacerts-operator-ssl" id="9eb54526-40f6-4675-99e6-9ec9f4200fd8">
+        <con:settings/>
+        <con:config service="Operator HTTPS" resourcePath="/.well-known/est/operator/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="cacerts-operator-ssl" id="3a460b7b-1764-4c7b-8d9c-c13c6f8b8d72" mediaType="application/json" sslKeystore="ncdev-O-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="9e8b9b8b-36b0-4ba4-8e75-3f19f32e0e4f" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="c114e822-1790-4b34-8aab-8cdb6c62d5b7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="5. cacerts-enterprise-nossl" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="cacerts-enterprise-nossl" id="ac424f00-4148-4201-9773-0efc7571899e">
+        <con:settings/>
+        <con:config service="Enterprise HTTP" resourcePath="/.well-known/est/enterprise/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="cacerts-enterprise-nossl" id="6600719c-3bf8-4cc0-b98a-01eb8e8b0a17" mediaType="application/json" sslKeystore="">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise_nossl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>http://${#Project#URL}:30421</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="74e5a193-4d73-4465-800a-9046b18c1d9e" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="2a79cc9d-4d41-4bcb-be45-441ed9d4b124" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="6. cacerts-enterprise-ssl" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="cacerts-enterprise-ssl" id="6cf2e2af-f8c7-4309-9359-b732f2f613c5">
+        <con:settings/>
+        <con:config service="Enterprise HTTPS" resourcePath="/.well-known/est/enterprise/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="cacerts-enterprise-ssl" id="495fa441-8808-405d-aebd-280ef4fa358b" mediaType="application/json" sslKeystore="ncdev-E-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise_ssl.p7b</con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="6d1a28fc-f489-4406-ac35-5be4dee17519" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:setupScript/>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="ee4113b7-570f-41fb-9500-282bfa79e655" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="7. operator-application-service-pki-ca" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="operator-application-service-pki-ca" id="ac1074b4-a0e5-4f6b-97e1-2bcd8b5057e9">
+        <con:settings/>
+        <con:config service="Operator Application Service PKI CA" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="operator-application-service-pki-ca" id="45e1e152-a32b-4513-a1dc-dda5bce22754" mediaType="application/json" sslKeystore="ncdev-O-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator-application-service-pki-ca_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="18ea22ba-40fc-4ffd-a6b9-2e65d2c5a842" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="d519b9c1-4568-46e2-8fe1-895f930d91ac" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="8. operator-application-service-root" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="operator-application-service-root" id="0a5170ed-950e-4550-8bec-d8b00b717894">
+        <con:settings/>
+        <con:config service="Operator Application Service Root" resourcePath="/.well-known/est/Application%20Service%20Root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="operator-application-service-root" id="bc717222-a02a-407e-83d0-07218bbf333b" mediaType="application/json" sslKeystore="ncdev-O-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator-application-service-root_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="b11f115f-7281-4947-9a2f-95f2e5619aa8" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="c6b6cea3-3eba-4fa6-93ba-67eba62c3af4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="9. enterprise-application-service-root" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="enterprise-application-service-root" id="c33ac914-ed97-4460-83d9-89d083f6ba85">
+        <con:settings/>
+        <con:config service="Enterprise Application Servie Root" resourcePath="/.well-known/est/Application%20Service%20Root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="enterprise-application-service-root" id="6493762c-f415-4fb3-b2bc-ac6387f5e29c" mediaType="application/json" sslKeystore="ncdev-E-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise-application-service-root_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="33b71351-2a79-409f-a3e5-fb957ab94fbe" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="ffd2cc6b-857b-4cd7-8acc-fa7662ecc8af" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="10. enterprise-application-service-pki-ca" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="enterprise-application-service-pki-ca" id="3b034ce4-4cfb-4e8a-bcd5-ad58598ee071">
+        <con:settings/>
+        <con:config service="Enterprise Application Service PKI CA" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="enterprise-application-service-pki-ca" id="bbe283f3-b236-4157-b3db-a8321cdace98" mediaType="application/json" sslKeystore="ncdev-E-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise-application-service-pki-ca_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="9847dacd-73b9-4ee8-b5f1-1bd55124ad97" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="5f848619-72ec-462a-b946-22ca7c6810ad" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="11. root-application-service-root" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="root-application-service-root" id="338ccdaa-0d26-428e-8583-a67cf0a62b3d">
+        <con:settings/>
+        <con:config service="Root Application Service Root" resourcePath="/.well-known/est/Application%20Service%20Root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="root-application-service-root" id="74ea735d-14b7-42c9-b40a-8d597bf82c3d" mediaType="application/json" sslKeystore="ncdev-R-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}root-application-service-root_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c9478821-dca4-41ea-8d50-e62f90133847" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="0b67bf01-3a15-4a2a-aa28-6236bfb8c6f2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="12. root-application-service-pki-ca" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="root-application-service-pki-ca" id="9b028da5-d7d6-4299-9ccf-579ffd0af0be">
+        <con:settings/>
+        <con:config service="Root Application Service PKI CA" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="root-application-service-pki-ca" id="f6b3145f-c571-4afc-bb92-0fb97ad776aa" mediaType="application/json" sslKeystore="ncdev-R-trusted-tls-keyStore.jks">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}root-application-service-pki-ca_ssl.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d55fa893-60de-46bb-b596-4b924a286d6e" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="6d0babd1-4012-46d9-b495-4bc553dac578" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="append-pkcs7-header-trailer" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="append-pkcs7-header-trailer" id="7ffee8d6-d174-427f-8e2a-ce2f4d08f4a5">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[import groovy.io.FileType
+
+def list = []
+
+def dir = new File("c:\\soapuidumps")
+dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.p7b/) { list << it }
+
+// Create a new dir for all the files 
+// to include a header and trailer of BEGIN and END PKCS
+def p7bdir = new File("c:\\soapuidumps\\updatesp7bs")
+
+if (p7bdir.exists()) {
+	p7bdir.deleteDir()
+}
+p7bdir.mkdir()
+
+
+list.each {
+  println it.name
+  def src = new File('c:\\soapuidumps\\'+it.name)
+  def dst = new File('c:\\soapuidumps\\updatesp7bs\\'+it.name)
+  dst << "-----BEGIN PKCS7-----\n"
+  dst << src.text
+  dst << "-----END PKCS7-----"
+}]]></script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="convert-p7b-cer" id="7bd2e617-2be4-4c49-ad3b-f3a6e8c038fb">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.io.FileType
+
+def list = []
+
+def dir = new File("c:\\soapuidumps\\updatesp7bs")
+dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.p7b/) { list &lt;&lt; it }
+
+// Create a new dir for all the cer files 
+// to include a header and trailer of BEGIN and END PKCS
+def cerfilesdir = new File("c:\\soapuidumps\\updatesp7bs\\cerfiles")
+
+if (cerfilesdir.exists()) {
+	cerfilesdir.deleteDir()
+}
+cerfilesdir.mkdir()
+
+list.each {
+log.info "Processing: " + it.name
+def ifile = it.name
+def (value1, value2) = ifile.tokenize( '.' )
+def ofile = value1+".cer"
+
+def cmdd = /openssl pkcs7 -print_certs -in ${ifile} -out 'c:\\soapuidumps\\updatesp7bs\\cerfiles\\'${ofile}/
+[ 'bash', '-c', cmdd ].execute(null, new File("c:\\soapuidumps\\updatesp7bs\\"))
+
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:testSuite id="b5132998-8b38-4a70-8304-9ebc3b2f54a4" name="SimpleEnrollTestSuite">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="0e6b17d1-9c0f-47f0-955d-7027e478d525" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="create-folder-for-csrs" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="create-folder-for-csrs" id="204913ee-08a0-46b7-81c4-3280fc67d551">
+        <con:settings/>
+        <con:config>
+          <script>//Delete the folders and recreate
+File outfile1 = new File("C:\\soapuicsrs")
+File outfile2 = new File("C:\\soapuicsrs\\Enterprise")
+File outfile3 = new File("C:\\soapuicsrs\\Operator")
+File outfile4 = new File("C:\\soapuicsrs\\Root")
+
+if (outfile1.exists()) {
+ outfile1.deleteDir()
+}
+if (outfile2.exists()) {
+ outfile2.deleteDir()
+}
+if (outfile3.exists()) {
+ outfile3.deleteDir()
+}
+if (outfile4.exists()) {
+ outfile4.deleteDir()
+}
+
+outfile1.mkdir()  
+outfile2.mkdir()  
+outfile3.mkdir()  
+outfile4.mkdir()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="3086cb46-f047-41e7-bf5e-f0b1e861e009">
+        <con:settings/>
+        <con:config>
+          <delay>2000</delay>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="77a58857-e6bc-46b8-bdb8-2c043cc71ce1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="copy-truststore-files" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="copy-truststore-files" id="0857d729-f28f-4eb4-b1d8-8bedc31dcb5d">
+        <con:settings/>
+        <con:config>
+          <script>def cmd1 = "cp /cygdrive/c/soapuitcakeystores/ncdevkeys/root/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Root/trusted-tls-trustStore.jks"
+[ 'bash', '-c', cmd1 ].execute()
+
+def cmd2 = "cp /cygdrive/c/soapuitcakeystores/ncdevkeys/enterprise/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Enterprise/trusted-tls-trustStore.jks"
+[ 'bash', '-c', cmd2 ].execute()
+
+def cmd3 = "cp /cygdrive/c/soapuitcakeystores/ncdevkeys/operator/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Operator/trusted-tls-trustStore.jks"
+[ 'bash', '-c', cmd3 ].execute()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="d2b8ddee-229b-41f2-b1cb-80abc59447ca">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="3159762c-c599-478f-8460-51a995fe23ce" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="root-simple-enroll" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="create-ks" id="3d33fdaf-53be-40c2-9c45-148ecad41cfc">
+        <con:settings/>
+        <con:config>
+          <script>def keypair = /keytool -genkey -alias pki_role_ra -keyalg EC -keysize 384 -sigalg SHA384withECDSA -dname 'CN=PKI Role RA' -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456/
+[ 'bash', '-c', keypair ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D0" id="083a65e8-6ae6-40cf-a8ca-1975c0365695">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="export-from-ts" id="00c8e32d-a510-4aea-9264-1e89d16e7b10">
+        <con:settings/>
+        <con:config>
+          <script>def export1 = /keytool -exportCert -alias application_service_root -file application_service_root.cer -keypass 123456 -keystore trusted-tls-trustStore.jks -storepass 123456/
+[ 'bash', '-c', export1 ].execute(null, new File("C:\\soapuicsrs\\Root"))
+
+def export2 = /keytool -exportCert -alias application_service_pki_ca -file application_service_pki_ca.cer -keypass 123456 -keystore trusted-tls-trustStore.jks -storepass 123456/
+[ 'bash', '-c', export2 ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D1" id="da26d500-c134-4923-9382-09b5e4a059ad">
+        <con:settings/>
+        <con:config>
+          <delay>6000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="import-cer-1" id="3798be31-bf03-46eb-845d-09d47deadde5">
+        <con:settings/>
+        <con:config>
+          <script>def import1 = /keytool -importCert -alias application_service_root -file application_service_root.cer -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', import1 ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D2" id="fb2e3c2b-52d3-4e24-97f5-0192449b8fec">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="import-cer-2" id="1caae364-1b72-4e59-a38f-76110bd160cc">
+        <con:settings/>
+        <con:config>
+          <script>def import2 = /keytool -importCert -alias application_service_pki_ca -file application_service_pki_ca.cer -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', import2 ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D3" id="ef4f52f7-e714-4ef4-8f11-6636bf7aea61">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="make-cp-of-keystore" id="5199321a-c574-4c9f-8ca2-9eeaa4970e97">
+        <con:settings/>
+        <con:config>
+          <script>//save a copy the permanent keystore
+def cp2 = "cp /cygdrive/c/soapuicsrs/Root/sbtrusted-tls-keyStore.jks /cygdrive/c/soapuicsrs/Root/permanent_root_trusted-tls-keyStore.jks"
+[ 'bash', '-c', cp2 ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D3.1" id="a9a1ea77-c46e-40a5-90b1-ddd57c1301f4">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="generate-csr" id="fec6f407-9743-4fe4-b6e5-68e45e5e1250">
+        <con:settings/>
+        <con:config>
+          <script>def dst = new File('c:\\soapuicsrs\\Root\\sbpkiRoleRa.csr')
+
+if (dst.exists()) {
+ dst.delete()
+}
+
+def csr = /keytool -certreq -alias pki_role_ra -sigalg SHA384withECDSA -file sbpkiRoleRa.csr -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', csr ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D4" id="15d3f6c5-3adc-4d24-b7c8-a6d4781c8c0b">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="remove-begin-end-from-csr" id="a9675644-a6b4-4c57-81cd-cd8f4b178ec2">
+        <con:settings/>
+        <con:config>
+          <script>File outfile = new File("C:\\soapuicsrs\\Root\\sbpkiRoleRaNew.csr")
+if (outfile.exists()) {
+ outfile.delete()
+}
+
+def infile = new File('C:\\soapuicsrs\\Root\\sbpkiRoleRa.csr')
+
+def result = infile.eachLine { line ->
+    if(!(line.contains('CERTIFICATE'))){
+        outfile &lt;&lt; "$line\n"
+    }
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D5" id="2435cee7-e24d-4b9c-9386-d7596be279a3">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="add-csr-to-property" id="a6966396-65af-4f92-88a5-b93cc7f29641">
+        <con:settings/>
+        <con:config>
+          <script>String value = new File('C:\\soapuicsrs\\Root\\sbpkiRoleRaNew.csr').text
+testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D6" id="e1dd80df-304d-4c94-a8f5-9b5ebdd5b094">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="root-simple-enroll" id="d8d4943e-a254-462e-a1cb-4ba40480c5a9">
+        <con:settings/>
+        <con:config service="Root SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="root-simple-enroll" id="00a4801e-bfd8-4d12-afdc-163dc1cee2f4" mediaType="text/xml" sslKeystore="ncdev-R-trusted-tls-keyStore.jks" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
+  &lt;con:entry key="Content-Type" value="application/pkcs10"/>
+&lt;/xml-fragment></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPathForSimpleEnroll}/Root/root_pkiRoleRa.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
+            <con:request>${#Project#csr}</con:request>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ed131d62-3759-41de-a171-a530a7e39c25" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D6.1" id="42827322-a8de-4b3d-9ad7-5faf60e2ea9c">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="save-response-with-hdr" id="49051ec4-1075-47d4-a9b3-ea8ab08a1ae0">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[//add the header and trailer to the pkiRoleRa response that you got back
+//-----BEGIN PKCS7
+//-----END PKCS7
+
+def src = new File('c:\\soapuicsrs\\Root\\root_pkiRoleRa.p7b')
+def dst = new File('c:\\soapuicsrs\\Root\\root_pkiRoleRa_hdr.p7b')
+
+if (dst.exists()) {
+ dst.delete()
+}
+
+dst << "-----BEGIN PKCS7-----\n"
+dst << src.text
+dst << "-----END PKCS7-----"]]></script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D7" id="b2d4530e-b074-48e6-ad00-7ec2d07f7c9a">
+        <con:settings/>
+        <con:config>
+          <delay>7000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="convert-to-cer" id="a7f5aeaf-5a3b-444f-aa28-a99cc6e5c323">
+        <con:settings/>
+        <con:config>
+          <script>//convert the saved response which is in p7b to .cer
+def cmdd = /openssl pkcs7 -print_certs -in 'c:\\soapuicsrs\\Root\\root_pkiRoleRa_hdr.p7b' -out 'c:\\soapuicsrs\\Root\\root_pkiRoleRa_cer.cer'/
+[ 'bash', '-c', cmdd ].execute(null, new File("c:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D8" id="98f9e39c-f8ae-4e74-8865-0ae71a546e22">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="delete-issuer-subject" id="d53043f1-7466-4f81-9814-c2dfb2206d2d">
+        <con:settings/>
+        <con:config>
+          <script>//delete the first 2 files from the cer file
+def src1 = new File('c:\\soapuicsrs\\Root\\root_pkiRoleRa_cer.cer')
+def dst1 = new File('c:\\soapuicsrs\\Root\\root_pkiRoleRa_cer_nosub_no_issuer.cer')
+if (dst1.exists()) {
+ dst1.delete()
+}
+
+def result = src1.eachLine { line ->
+    if (! (line.contains('subject=') || line.contains('issuer=') ) ){
+        dst1 &lt;&lt; "$line\n"
+    }
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D9" id="7a68b186-eec0-4f4b-bef1-3d3e685776bc">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="create-permanent-keystore" id="86d21317-48e7-4619-8aac-255053bde5c9">
+        <con:settings/>
+        <con:config>
+          <script>//import the cer into the keystore
+def import1 = /keytool -importCert -alias pki_role_ra -file 'c:\\soapuicsrs\\Root\\root_pkiRoleRa_cer_nosub_no_issuer.cer' -keypass 123456 -keystore 'C:\\soapuicsrs\\Root\\permanent_root_trusted-tls-keyStore.jks' -storepass 123456 -noprompt/
+[ 'bash', '-c', import1 ].execute(null, new File("C:\\soapuicsrs\\Root"))</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="69cb8786-3d41-41c8-ab3e-e33b6d77e32a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="enterprise-simple-enroll" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="create-ks" id="a1c798f7-da76-49b3-8578-f3c73ec3e6b8">
+        <con:settings/>
+        <con:config>
+          <script>def keypair = /keytool -genkey -alias pki_role_ra -keyalg EC -keysize 384 -sigalg SHA384withECDSA -dname 'CN=PKI Role RA' -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456/
+[ 'bash', '-c', keypair ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D0" id="982808ba-3ba8-41c6-a73d-e05302754a7e">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="export-from-ts" id="6517b635-753d-4eec-a0b1-5eb9924b0af6">
+        <con:settings/>
+        <con:config>
+          <script>def export1 = /keytool -exportCert -alias application_service_root -file application_service_root.cer -keypass 123456 -keystore trusted-tls-trustStore.jks -storepass 123456/
+[ 'bash', '-c', export1 ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))
+
+def export2 = /keytool -exportCert -alias application_service_pki_ca -file application_service_pki_ca.cer -keypass 123456 -keystore trusted-tls-trustStore.jks -storepass 123456/
+[ 'bash', '-c', export2 ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D1" id="2b1419ab-6844-471e-968e-e3aec4be13bb">
+        <con:settings/>
+        <con:config>
+          <delay>6000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="import-cer-1" id="1bcc1aec-bed2-4b2e-99d8-c0a930cda06b">
+        <con:settings/>
+        <con:config>
+          <script>def import1 = /keytool -importCert -alias application_service_root -file application_service_root.cer -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', import1 ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D2" id="3c6d30dd-833a-4b8e-90d0-d296ea989669">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="import-cer-2" id="9cf8c947-b34c-41ac-8dfe-4714f44af6b7">
+        <con:settings/>
+        <con:config>
+          <script>def import2 = /keytool -importCert -alias application_service_pki_ca -file application_service_pki_ca.cer -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', import2 ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D3" id="fd42ee78-fc17-4164-91ef-bf1efb0160d2">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="make-cp-of-keystore" id="ae0cf33a-48c8-4bbe-a12f-07097d48058d">
+        <con:settings/>
+        <con:config>
+          <script>//save a copy the permanent keystore
+def cp2 = "cp /cygdrive/c/soapuicsrs/Enterprise/sbtrusted-tls-keyStore.jks /cygdrive/c/soapuicsrs/Enterprise/permanent_enterprise_trusted-tls-keyStore.jks"
+[ 'bash', '-c', cp2 ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D3.1" id="e6e19ca6-8705-4310-929c-e94085402ddd">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="generate-csr" id="0d21ba46-23f3-4e9d-b2f3-dc54e5eca05e">
+        <con:settings/>
+        <con:config>
+          <script>def dst = new File('c:\\soapuicsrs\\Enterprise\\sbpkiRoleRa.csr')
+
+if (dst.exists()) {
+ dst.delete()
+}
+
+def csr = /keytool -certreq -alias pki_role_ra -sigalg SHA384withECDSA -file sbpkiRoleRa.csr -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', csr ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D4" id="4225278e-8fc3-479b-9211-8764cdb08c62">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="remove-begin-end-from-csr" id="2261fc66-61a6-46aa-8e76-1456d77f03da">
+        <con:settings/>
+        <con:config>
+          <script>File outfile = new File("C:\\soapuicsrs\\Enterprise\\sbpkiRoleRaNew.csr")
+if (outfile.exists()) {
+ outfile.delete()
+}
+
+def infile = new File('C:\\soapuicsrs\\Enterprise\\sbpkiRoleRa.csr')
+
+def result = infile.eachLine { line ->
+    if(!(line.contains('CERTIFICATE'))){
+        outfile &lt;&lt; "$line\n"
+    }
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D5" id="c7b0b173-f6dd-47ce-8a47-16e1d1fe146c">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="add-csr-to-property" id="478f8b5d-30c6-466b-91eb-4d81e0def866">
+        <con:settings/>
+        <con:config>
+          <script>String value = new File('C:\\soapuicsrs\\Enterprise\\sbpkiRoleRaNew.csr').text
+testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D6" id="c409855b-45e4-4701-8196-06a0d6bdb49d">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="enterprise-simple-enroll" id="6566f3f9-d606-43cd-9fb0-53edeb6bc661">
+        <con:settings/>
+        <con:config service="Enterprise SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="enterprise-simple-enroll" id="8fb265f4-1fa7-4fc4-b275-5366ce481ee9" mediaType="application/xml" sslKeystore="ncdev-E-trusted-tls-keyStore.jks" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
+  &lt;con:entry key="Content-Type" value="application/pkcs10"/>
+&lt;/xml-fragment></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPathForSimpleEnroll}/Enterprise/enterprise_pkiRoleRa.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
+            <con:request>${#Project#csr}</con:request>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="cc91d1c1-bec6-4995-9bae-dcef78b93459" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D7 1" id="589aa805-2e0f-4066-9d5b-a51880339460">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="save-response-with-hdr" id="19cab8d4-8a17-425e-9fa0-65837c961661">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[//add the header and trailer to the pkiRoleRa response that you got back
+//-----BEGIN PKCS7
+//-----END PKCS7
+
+def src = new File('c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa.p7b')
+def dst = new File('c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa_hdr.p7b')
+
+if (dst.exists()) {
+ dst.delete()
+}
+
+dst << "-----BEGIN PKCS7-----\n"
+dst << src.text
+dst << "-----END PKCS7-----"]]></script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D7" id="93310242-5a9c-4b08-a3ea-e4f5a184f83d">
+        <con:settings/>
+        <con:config>
+          <delay>7000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="convert-to-cer" id="27516f89-d393-4f03-a4cd-40b8b471691a">
+        <con:settings/>
+        <con:config>
+          <script>//convert the saved response which is in p7b to .cer
+def cmdd = /openssl pkcs7 -print_certs -in 'c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa_hdr.p7b' -out 'c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa_cer.cer'/
+[ 'bash', '-c', cmdd ].execute(null, new File("c:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D8" id="ddcdb2b8-b4da-40b3-b35e-8a5fe5188a90">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="delete-issuer-subject" id="6d152e7a-b185-4d22-99b2-b54fefc63a91">
+        <con:settings/>
+        <con:config>
+          <script>//delete the first 2 files from the cer file
+def src1 = new File('c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa_cer.cer')
+def dst1 = new File('c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa_cer_nosub_no_issuer.cer')
+if (dst1.exists()) {
+ dst1.delete()
+}
+
+def result = src1.eachLine { line ->
+    if (! (line.contains('subject=') || line.contains('issuer=') ) ){
+        dst1 &lt;&lt; "$line\n"
+    }
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D9" id="9e9db888-640c-4c16-9491-14b8ea740f56">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="create-permanent-keystore" id="9b21a3a5-fae5-4807-840a-42f4f3e0ac27">
+        <con:settings/>
+        <con:config>
+          <script>//import the cer into the keystore
+def import1 = /keytool -importCert -alias pki_role_ra -file 'c:\\soapuicsrs\\Enterprise\\enterprise_pkiRoleRa_cer_nosub_no_issuer.cer' -keypass 123456 -keystore 'C:\\soapuicsrs\\Enterprise\\permanent_enterprise_trusted-tls-keyStore.jks' -storepass 123456 -noprompt/
+[ 'bash', '-c', import1 ].execute(null, new File("C:\\soapuicsrs\\Enterprise"))</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="89a9ca81-56c6-4e65-be1f-1dcdf97a2e2a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="operator-simple-enroll" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="create-ks" id="05d53bf6-be49-45f3-a949-77ae9c91cdfc">
+        <con:settings/>
+        <con:config>
+          <script>def keypair = /keytool -genkey -alias pki_role_ra -keyalg EC -keysize 384 -sigalg SHA384withECDSA -dname 'CN=PKI Role RA' -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456/
+[ 'bash', '-c', keypair ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D0" id="ef40de6d-bb9e-447a-b004-8d7d8670ca5a">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="export-from-ts" id="8138f342-0bc3-4c05-beb9-168ef7a62060">
+        <con:settings/>
+        <con:config>
+          <script>def export1 = /keytool -exportCert -alias application_service_root -file application_service_root.cer -keypass 123456 -keystore trusted-tls-trustStore.jks -storepass 123456/
+[ 'bash', '-c', export1 ].execute(null, new File("C:\\soapuicsrs\\Operator"))
+
+def export2 = /keytool -exportCert -alias application_service_pki_ca -file application_service_pki_ca.cer -keypass 123456 -keystore trusted-tls-trustStore.jks -storepass 123456/
+[ 'bash', '-c', export2 ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D1" id="a774b3d0-7c31-46b7-82ba-e244febeb70f">
+        <con:settings/>
+        <con:config>
+          <delay>6000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="import-cer-1" id="214dcb86-e798-4897-8c43-bb7d4d09845d">
+        <con:settings/>
+        <con:config>
+          <script>def import1 = /keytool -importCert -alias application_service_root -file application_service_root.cer -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', import1 ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D2" id="3b76548f-0539-4b77-b07f-d7521c543056">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="import-cer-2" id="695ecf9e-bd98-4f7d-9597-eb00add983a7">
+        <con:settings/>
+        <con:config>
+          <script>def import2 = /keytool -importCert -alias application_service_pki_ca -file application_service_pki_ca.cer -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', import2 ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D3" id="321f6097-b2e8-45f7-951d-f32d96068b97">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="make-cp-of-keystore" id="3cc66a3f-df49-4a40-92f6-1496c5231c8f">
+        <con:settings/>
+        <con:config>
+          <script>//save a copy the permanent keystore
+def cp2 = "cp /cygdrive/c/soapuicsrs/Operator/sbtrusted-tls-keyStore.jks /cygdrive/c/soapuicsrs/Operator/permanent_operator_trusted-tls-keyStore.jks"
+[ 'bash', '-c', cp2 ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D3.1" id="5cea464f-c092-40d9-86a5-e7c7d9e7d608">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="generate-csr" id="98597d91-46b1-4e3b-9026-5c0f9889c659">
+        <con:settings/>
+        <con:config>
+          <script>def dst = new File('c:\\soapuicsrs\\Operator\\sbpkiRoleRa.csr')
+
+if (dst.exists()) {
+ dst.delete()
+}
+
+def csr = /keytool -certreq -alias pki_role_ra -sigalg SHA384withECDSA -file sbpkiRoleRa.csr -keypass 123456 -keystore sbtrusted-tls-keyStore.jks -storepass 123456 -noprompt/
+[ 'bash', '-c', csr ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D4" id="3817d382-5313-4a8d-b635-2005cee4d7be">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="remove-begin-end-from-csr" id="aa125bda-2b34-484d-bea9-0b55655f9728">
+        <con:settings/>
+        <con:config>
+          <script>File outfile = new File("C:\\soapuicsrs\\Operator\\sbpkiRoleRaNew.csr")
+if (outfile.exists()) {
+ outfile.delete()
+}
+
+def infile = new File('C:\\soapuicsrs\\Operator\\sbpkiRoleRa.csr')
+
+def result = infile.eachLine { line ->
+    if(!(line.contains('CERTIFICATE'))){
+        outfile &lt;&lt; "$line\n"
+    }
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D5" id="69b8b6b0-3a88-4dcb-a8e0-898f590b613e">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="add-csr-to-property" id="140c1c81-b33f-4168-a4c0-7f054f934ca6">
+        <con:settings/>
+        <con:config>
+          <script>String value = new File('C:\\soapuicsrs\\Operator\\sbpkiRoleRaNew.csr').text
+testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D6" id="a0a6b65f-377f-44bb-910a-062fd4fc4cbe">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="operator-simple-enroll" id="518f78c8-0b18-4009-96c8-7a155f270ef8">
+        <con:settings/>
+        <con:config service="Operator SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Copy of operator-simple-enroll" id="c9a9d083-ad60-4f47-9336-d71dd58d4c53" mediaType="text/xml" sslKeystore="ncdev-O-trusted-tls-keyStore.jks" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
+  &lt;con:entry key="Content-Type" value="application/pkcs10"/>
+&lt;/xml-fragment></con:setting>
+              <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPathForSimpleEnroll}/Operator/operator_pkiRoleRa.p7b</con:setting>
+            </con:settings>
+            <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
+            <con:request>${#Project#csr}</con:request>
+            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="7e76643b-dbb6-4d92-a5ea-7f6835b22b08" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D7 1" id="7809d4cf-7611-43d2-a053-bdc6a6b2cebe">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="save-response-with-hdr" id="1abb023e-5998-4841-b88f-eee3a333b684">
+        <con:settings/>
+        <con:config>
+          <script><![CDATA[//add the header and trailer to the pkiRoleRa response that you got back
+//-----BEGIN PKCS7
+//-----END PKCS7
+
+def src = new File('c:\\soapuicsrs\\Operator\\operator_pkiRoleRa.p7b')
+def dst = new File('c:\\soapuicsrs\\Operator\\operator_pkiRoleRa_hdr.p7b')
+
+if (dst.exists()) {
+ dst.delete()
+}
+
+dst << "-----BEGIN PKCS7-----\n"
+dst << src.text
+dst << "-----END PKCS7-----"]]></script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D7" id="c780af49-9c79-44fd-9cf0-bd3536161174">
+        <con:settings/>
+        <con:config>
+          <delay>7000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="convert-to-cer" id="1b7e98b4-e20b-4b28-8f44-6f9cfc755c99">
+        <con:settings/>
+        <con:config>
+          <script>//convert the saved response which is in p7b to .cer
+def cmdd = /openssl pkcs7 -print_certs -in 'c:\\soapuicsrs\\Operator\\operator_pkiRoleRa_hdr.p7b' -out 'c:\\soapuicsrs\\Operator\\operator_pkiRoleRa_cer.cer'/
+[ 'bash', '-c', cmdd ].execute(null, new File("c:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D8" id="1bc01509-ed50-455c-bf5f-4545245fb119">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="delete-issuer-subject" id="235773a6-4625-40b6-85dd-489a920e54dd">
+        <con:settings/>
+        <con:config>
+          <script>//delete the first 2 files from the cer file
+def src1 = new File('c:\\soapuicsrs\\Operator\\operator_pkiRoleRa_cer.cer')
+def dst1 = new File('c:\\soapuicsrs\\Operator\\operator_pkiRoleRa_cer_nosub_no_issuer.cer')
+if (dst1.exists()) {
+ dst1.delete()
+}
+
+def result = src1.eachLine { line ->
+    if (! (line.contains('subject=') || line.contains('issuer=') ) ){
+        dst1 &lt;&lt; "$line\n"
+    }
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="D9" id="7647e92f-ccf0-453c-9d22-2a9f284be05f">
+        <con:settings/>
+        <con:config>
+          <delay>5000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="create-permanent-keystore" id="d7924a5a-3dce-40b1-920d-78c296298a97">
+        <con:settings/>
+        <con:config>
+          <script>//import the cer into the keystore
+def import1 = /keytool -importCert -alias pki_role_ra -file 'c:\\soapuicsrs\\Operator\\operator_pkiRoleRa_cer_nosub_no_issuer.cer' -keypass 123456 -keystore 'C:\\soapuicsrs\\Operator\\permanent_operator_trusted-tls-keyStore.jks' -storepass 123456 -noprompt/
+[ 'bash', '-c', import1 ].execute(null, new File("C:\\soapuicsrs\\Operator"))</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:properties>
+    <con:property>
+      <con:name>OutputPath</con:name>
+      <con:value>C:\soapuidumps\</con:value>
+    </con:property>
+    <con:property>
+      <con:name>PROD</con:name>
+      <con:value>uksmso-tca-prod-kubemaster01</con:value>
+    </con:property>
+    <con:property>
+      <con:name>PREPROD</con:name>
+      <con:value>grs-preprodkubemaster01</con:value>
+    </con:property>
+    <con:property>
+      <con:name>QA</con:name>
+      <con:value>grs-qakubemaster01</con:value>
+    </con:property>
+    <con:property>
+      <con:name>DEV</con:name>
+      <con:value>grs-testkubemaster01</con:value>
+    </con:property>
+    <con:property>
+      <con:name>URL</con:name>
+      <con:value>nc-swe-dev-kubemaster01.trilliant.linux</con:value>
+    </con:property>
+    <con:property>
+      <con:name>Temp</con:name>
+      <con:value>nc-swe-dev-kubemaster01.trilliant.linux</con:value>
+    </con:property>
+    <con:property>
+      <con:name>csr</con:name>
+      <con:value>MIIBQDCBxQIBADAWMRQwEgYDVQQDEwtQS0kgUm9sZSBSQTB2MBAGByqGSM49AgEG
+BSuBBAAiA2IABO/m2aJt26VqyMRxkMGQdGJOZEbvz+C0aIljPS7GmpL/Wwgl0oWG
+GVkLRdCmNHBWY2jsqw31FFuI7Ulr4DNRNugQZPui57h4MMvwwNKABF8RKNFVozI1
+o4Oeo898uqZHVaAwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFCLCz2hJ0L24
+zbpvAdQGmue8AeVXMAwGCCqGSM49BAMDBQADaAAwZQIxAIIQYIawIHBZ+/XFXU+p
+2QXheaWwHZJ54EuQA2MHmDHGF23H/qElj65+EkFZfX3aNwIwY9f/EZ5ah3KFNLGi
+ZrVTKtmLN21TRF2baUsnoP2fBKNyHH9vUGmT4KMA/OOOKSHW</con:value>
+    </con:property>
+    <con:property>
+      <con:name>NCDEV</con:name>
+      <con:value>nc-swe-dev-kubemaster01.trilliant.linux</con:value>
+    </con:property>
+    <con:property>
+      <con:name>OutputPathForSimpleEnroll</con:name>
+      <con:value>C:\soapuicsrs\</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer>
+    <con:crypto>
+      <con:source>C:/soapuitcakeystores/ncdevkeys/enterprise/generated/ncdev-E-trusted-tls-keyStore.jks</con:source>
+      <con:password>123456</con:password>
+      <con:type>KEYSTORE</con:type>
+    </con:crypto>
+    <con:crypto>
+      <con:source>C:/soapuitcakeystores/ncdevkeys/operator/generated/ncdev-O-trusted-tls-keyStore.jks</con:source>
+      <con:password>123456</con:password>
+      <con:type>KEYSTORE</con:type>
+    </con:crypto>
+    <con:crypto>
+      <con:source>C:/soapuitcakeystores/ncdevkeys/root/generated/ncdev-R-trusted-tls-keyStore.jks</con:source>
+      <con:password>123456</con:password>
+      <con:type>KEYSTORE</con:type>
+    </con:crypto>
+  </con:wssContainer>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

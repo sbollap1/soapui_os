@@ -1191,7 +1191,7 @@ def cmdd = /openssl pkcs7 -print_certs -in ${ifile} -out 'c:\\soapuidumps\\updat
         <con:settings/>
         <con:config>
           <script>//Delete the folders and recreate
-//Delete the folders and recreate
+
 File outfile1 = new File("C:\\soapuicsrs")
 File outfile2 = new File("C:\\soapuicsrs\\Enterprise")
 File outfile3 = new File("C:\\soapuicsrs\\Operator")
@@ -1841,7 +1841,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
       <con:testStep type="restrequest" name="operator-simple-enroll" id="518f78c8-0b18-4009-96c8-7a155f270ef8">
         <con:settings/>
         <con:config service="Operator SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="Copy of operator-simple-enroll" id="c9a9d083-ad60-4f47-9336-d71dd58d4c53" mediaType="text/xml" sslKeystore="ncdev-O-trusted-tls-keyStore.jks" postQueryString="false">
+          <con:restRequest name="operator-simple-enroll" id="c9a9d083-ad60-4f47-9336-d71dd58d4c53" mediaType="text/xml" sslKeystore="ncdev-O-trusted-tls-keyStore.jks" postQueryString="false">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>

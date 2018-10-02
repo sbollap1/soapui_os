@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="8f2e6024-7da1-4c43-b458-b67ed674c753" activeEnvironment="Default" name="ncdev" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="8f2e6024-7da1-4c43-b458-b67ed674c753" activeEnvironment="Default" name="prod" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="WsdlSettings@cache-wsdls">false</con:setting>
   </con:settings>
   <con:interface xsi:type="con:RestService" id="6a1ae9b5-3801-49d0-851b-96545e2f1037" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root HTTPS" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30400</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/operator_root/cacerts" id="8c085e5f-5c6a-43d3-a4cb-0f7bfd22c2d1">
       <con:description>cacerts</con:description>
@@ -51,7 +51,7 @@
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -65,7 +65,7 @@
   <con:interface xsi:type="con:RestService" id="084eed4c-5e21-47a8-a92e-f96869cc5a42" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root HTTP" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>http://grs-preprodkubemaster01:30401</con:endpoint>
+      <con:endpoint>http://uksmso-tca-prod-kubemaster01.trilliant.local:30401</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/operator_root/cacerts" id="01463e69-7cae-4c04-b91c-f297ab81e4a3">
       <con:settings/>
@@ -77,7 +77,7 @@
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>404</con:status>
           <con:params/>
-          <con:element xmlns:grs="http://grs-preprodkubemaster01/">grs:Fault</con:element>
+          <con:element xmlns:grs="http://uksmso-tca-prod-kubemaster01.trilliant.local/">grs:Fault</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType>application/pkcs7-mime</con:mediaType>
@@ -91,7 +91,7 @@
           </con:settings>
           <con:endpoint>http://${#Project#URL}:30401</con:endpoint>
           <con:request/>
-          <con:originalUri>http://grs-preprodkubemaster01/</con:originalUri>
+          <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -105,7 +105,7 @@
   <con:interface xsi:type="con:RestService" id="5fd5cf75-cf2b-44e3-9b96-05638e91a779" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise HTTPS" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30420</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30420</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/enterprise/cacerts" id="ff526d68-fa5d-4241-b2f9-0b8401f4327c">
       <con:settings/>
@@ -135,7 +135,7 @@
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>500</con:status>
           <con:params/>
-          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/cacerts">cac:Fault</con:element>
+          <con:element xmlns:cac="https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts">cac:Fault</con:element>
         </con:representation>
         <con:request name="Request 1" id="495fa441-8808-405d-aebd-280ef4fa358b" mediaType="application/json" sslKeystore="">
           <con:settings>
@@ -143,7 +143,7 @@
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -181,7 +181,7 @@
           </con:settings>
           <con:endpoint>http://${#Project#URL}:30421</con:endpoint>
           <con:request/>
-          <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -195,7 +195,7 @@
   <con:interface xsi:type="con:RestService" id="7d5a42b7-2d8b-44d4-bc01-97d8e01da2eb" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator HTTPS" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30410</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/operator/cacerts" id="954cbb27-96d0-400f-89da-5ebf4b0445e5">
       <con:settings/>
@@ -225,7 +225,7 @@
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>500</con:status>
           <con:params/>
-          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/cacerts">cac:Fault</con:element>
+          <con:element xmlns:cac="https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts">cac:Fault</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -257,7 +257,7 @@
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -271,7 +271,7 @@
   <con:interface xsi:type="con:RestService" id="e574d390-bbf9-4814-978f-ecef05a9d7f5" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator HTTP" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>http://grs-preprodkubemaster01:30401</con:endpoint>
+      <con:endpoint>http://uksmso-tca-prod-kubemaster01.trilliant.local:30401</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/operator/cacerts" id="f6bba5dd-b5e5-4b0c-a04b-70d21c874d04">
       <con:settings/>
@@ -289,7 +289,7 @@
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>500 404</con:status>
           <con:params/>
-          <con:element xmlns:cac="http://grs-preprodkubemaster01/.well-known/est/cacerts">cac:Fault</con:element>
+          <con:element xmlns:cac="http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts">cac:Fault</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -321,7 +321,7 @@
           </con:settings>
           <con:endpoint>http://${#Project#URL}:30411</con:endpoint>
           <con:request/>
-          <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+          <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -335,7 +335,7 @@
   <con:interface xsi:type="con:RestService" id="e611ab77-2cd6-4c24-8f46-2b97e045f6e2" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root SimpleEnroll" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30400</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" id="7cbde6c7-749f-45ad-90b1-85ac332846a9">
       <con:settings/>
@@ -357,7 +357,7 @@
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>400 500</con:status>
           <con:params/>
-          <con:element xmlns:sim="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll">sim:Fault</con:element>
+          <con:element xmlns:sim="https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll">sim:Fault</con:element>
         </con:representation>
         <con:request name="Request 1" id="00a4801e-bfd8-4d12-afdc-163dc1cee2f4" mediaType="text/xml" sslKeystore="" postQueryString="false">
           <con:settings>
@@ -374,7 +374,7 @@ CFnfLc79I4pVsKAwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFMgUWio/KSTJ
 Y18usI7hYq1jFowlMAwGCCqGSM49BAMDBQADZwAwZAIwXhSgW3zbWgruiA/7e4Pk
 fHnhB1rnR8c9EW7RsXzn54nRtmyhcyA6yNMjV3Ps7pDqAjA5daYbF0D/e2y/RfXe
 O+5kFG9M/873LvUV4S0BZF/p5RXIalJv39Zs+P3sUFuKzj0=</con:request>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -388,7 +388,7 @@ O+5kFG9M/873LvUV4S0BZF/p5RXIalJv39Zs+P3sUFuKzj0=</con:request>
   <con:interface xsi:type="con:RestService" id="b8eca7e5-0654-48f9-9b48-21b95f16f714" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise SimpleEnroll" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30420</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30420</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" id="03c938f7-d494-4a0c-b705-cdc23033e6d5">
       <con:settings/>
@@ -410,7 +410,7 @@ O+5kFG9M/873LvUV4S0BZF/p5RXIalJv39Zs+P3sUFuKzj0=</con:request>
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>400 500 404</con:status>
           <con:params/>
-          <con:element xmlns:sim="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll">sim:Fault</con:element>
+          <con:element xmlns:sim="https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll">sim:Fault</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -433,7 +433,7 @@ O+5kFG9M/873LvUV4S0BZF/p5RXIalJv39Zs+P3sUFuKzj0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -448,7 +448,7 @@ O+5kFG9M/873LvUV4S0BZF/p5RXIalJv39Zs+P3sUFuKzj0=</con:request>
   <con:interface xsi:type="con:RestService" id="5f4a4179-f525-4cec-aaab-3e56dbf72887" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator SimpleEnroll" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30410</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" id="f17ea7e4-3fb3-4806-b924-c37b1aedc66f">
       <con:settings/>
@@ -481,7 +481,7 @@ ErLq5Mj9NhSanqAwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFCU8Yg7Alx+Y
 G8rFc7jo5gHbW0dzMAwGCCqGSM49BAMDBQADZwAwZAIwXai/MiQ2lHkgJuBwbCfq
 aPWzTnaOCZ4tuRsI2z/wKpyHG0qlsm51yepj/nfHOnJSAjBTdkneFATb/kGjvj44
 knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -495,7 +495,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
   <con:interface xsi:type="con:RestService" id="239a8c11-974c-43d4-8dbc-5e066c696c09" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root Application Service PKI CA" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30400</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" id="123f15dd-b9ba-48a3-8a16-7e705517e2fc">
       <con:settings/>
@@ -507,7 +507,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>500</con:status>
           <con:params/>
-          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts">cac:Fault</con:element>
+          <con:element xmlns:cac="https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts">cac:Fault</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType>application/pkcs7-mime</con:mediaType>
@@ -521,7 +521,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -535,7 +535,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
   <con:interface xsi:type="con:RestService" id="540d23bb-332c-4179-a3fd-9c4593bd0151" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator Application Service PKI CA" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30410</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" id="2207f7ce-b0fe-4b55-8ae0-5bc1f66d8058">
       <con:settings/>
@@ -553,7 +553,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           <con:mediaType>application/json;charset=UTF-8</con:mediaType>
           <con:status>500</con:status>
           <con:params/>
-          <con:element xmlns:cac="https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts">cac:Fault</con:element>
+          <con:element xmlns:cac="https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts">cac:Fault</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType>application/pkcs7-mime</con:mediaType>
@@ -567,7 +567,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -601,7 +601,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -615,7 +615,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
   <con:interface xsi:type="con:RestService" id="f4ca62b6-a980-4c59-a8e3-2ee7dad215aa" wadlVersion="http://wadl.dev.java.net/2009/02" name="Root Application Service Root" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30400</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30400</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20Root/cacerts" id="572ec9aa-fa50-4260-8f16-20e94f086109">
       <con:settings/>
@@ -641,7 +641,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -655,7 +655,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
   <con:interface xsi:type="con:RestService" id="ead67cfa-a04f-444a-87ed-18e6209f59c9" wadlVersion="http://wadl.dev.java.net/2009/02" name="Operator Application Service Root" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30410</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30410</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20Root/cacerts" id="22f10b1a-adbd-4348-9bae-f4da63549320">
       <con:settings/>
@@ -687,7 +687,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -701,7 +701,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
   <con:interface xsi:type="con:RestService" id="6567764c-f92d-4291-97fd-5c3ce5c54a97" wadlVersion="http://wadl.dev.java.net/2009/02" name="Enterprise Application Servie Root" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:endpoints>
-      <con:endpoint>https://grs-preprodkubemaster01:30420</con:endpoint>
+      <con:endpoint>https://uksmso-tca-prod-kubemaster01.trilliant.local:30420</con:endpoint>
     </con:endpoints>
     <con:resource name="" path="/.well-known/est/Application%20Service%20Root/cacerts" id="8af27eb0-9d7b-4666-a8ef-9a8ffd9aaffc">
       <con:settings/>
@@ -733,7 +733,7 @@ knztGZrjdn/rxcn9lsIEZA+Yv+JuNDbeqccfXkm+m0F+Pa0=</con:request>
           </con:settings>
           <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
           <con:request/>
-          <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+          <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
           <con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
@@ -848,7 +848,7 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="cacerts-root-ssl" id="b3dc6a10-f343-427d-baab-9652170269ab">
         <con:settings/>
         <con:config service="Root HTTPS" resourcePath="/.well-known/est/operator_root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="cacerts-root-ssl" id="c076c229-d308-463a-bcff-de8d8d2f2ecb" mediaType="application/json" sslKeystore="ncdev-R-trusted-tls-keyStore.jks">
+          <con:restRequest name="cacerts-root-ssl" id="c076c229-d308-463a-bcff-de8d8d2f2ecb" mediaType="application/json" sslKeystore="prod-R-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operatorroot_ssl.p7b</con:setting>
@@ -856,7 +856,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="62ab0e19-45f0-41b2-be38-414f816f8ffa" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -886,7 +886,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>http://${#Project#URL}:30401</con:endpoint>
             <con:request/>
-            <con:originalUri>http://grs-preprodkubemaster01/</con:originalUri>
+            <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="95868e89-3313-4950-aedb-68ece06b2456" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -915,7 +915,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>http://${#Project#URL}:30411</con:endpoint>
             <con:request/>
-            <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="7c840bba-3c91-4dab-b31d-79fb43583682" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -937,14 +937,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="cacerts-operator-ssl" id="9eb54526-40f6-4675-99e6-9ec9f4200fd8">
         <con:settings/>
         <con:config service="Operator HTTPS" resourcePath="/.well-known/est/operator/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="cacerts-operator-ssl" id="3a460b7b-1764-4c7b-8d9c-c13c6f8b8d72" mediaType="application/json" sslKeystore="ncdev-O-trusted-tls-keyStore.jks">
+          <con:restRequest name="cacerts-operator-ssl" id="3a460b7b-1764-4c7b-8d9c-c13c6f8b8d72" mediaType="application/json" sslKeystore="prod-O-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="9e8b9b8b-36b0-4ba4-8e75-3f19f32e0e4f" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -973,7 +973,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>http://${#Project#URL}:30421</con:endpoint>
             <con:request/>
-            <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="74e5a193-4d73-4465-800a-9046b18c1d9e" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -995,7 +995,7 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="cacerts-enterprise-ssl" id="6cf2e2af-f8c7-4309-9359-b732f2f613c5">
         <con:settings/>
         <con:config service="Enterprise HTTPS" resourcePath="/.well-known/est/enterprise/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="cacerts-enterprise-ssl" id="495fa441-8808-405d-aebd-280ef4fa358b" mediaType="application/json" sslKeystore="ncdev-E-trusted-tls-keyStore.jks">
+          <con:restRequest name="cacerts-enterprise-ssl" id="495fa441-8808-405d-aebd-280ef4fa358b" mediaType="application/json" sslKeystore="prod-E-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise_ssl.p7b</con:setting>
@@ -1003,7 +1003,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="6d1a28fc-f489-4406-ac35-5be4dee17519" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1026,14 +1026,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="operator-application-service-pki-ca" id="ac1074b4-a0e5-4f6b-97e1-2bcd8b5057e9">
         <con:settings/>
         <con:config service="Operator Application Service PKI CA" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="operator-application-service-pki-ca" id="45e1e152-a32b-4513-a1dc-dda5bce22754" mediaType="application/json" sslKeystore="ncdev-O-trusted-tls-keyStore.jks">
+          <con:restRequest name="operator-application-service-pki-ca" id="45e1e152-a32b-4513-a1dc-dda5bce22754" mediaType="application/json" sslKeystore="prod-O-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator-application-service-pki-ca_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="18ea22ba-40fc-4ffd-a6b9-2e65d2c5a842" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1055,14 +1055,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="operator-application-service-root" id="0a5170ed-950e-4550-8bec-d8b00b717894">
         <con:settings/>
         <con:config service="Operator Application Service Root" resourcePath="/.well-known/est/Application%20Service%20Root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="operator-application-service-root" id="bc717222-a02a-407e-83d0-07218bbf333b" mediaType="application/json" sslKeystore="ncdev-O-trusted-tls-keyStore.jks">
+          <con:restRequest name="operator-application-service-root" id="bc717222-a02a-407e-83d0-07218bbf333b" mediaType="application/json" sslKeystore="prod-O-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}operator-application-service-root_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="b11f115f-7281-4947-9a2f-95f2e5619aa8" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1084,14 +1084,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="enterprise-application-service-root" id="c33ac914-ed97-4460-83d9-89d083f6ba85">
         <con:settings/>
         <con:config service="Enterprise Application Servie Root" resourcePath="/.well-known/est/Application%20Service%20Root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="enterprise-application-service-root" id="6493762c-f415-4fb3-b2bc-ac6387f5e29c" mediaType="application/json" sslKeystore="ncdev-E-trusted-tls-keyStore.jks">
+          <con:restRequest name="enterprise-application-service-root" id="6493762c-f415-4fb3-b2bc-ac6387f5e29c" mediaType="application/json" sslKeystore="prod-E-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise-application-service-root_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="33b71351-2a79-409f-a3e5-fb957ab94fbe" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1113,14 +1113,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="enterprise-application-service-pki-ca" id="3b034ce4-4cfb-4e8a-bcd5-ad58598ee071">
         <con:settings/>
         <con:config service="Enterprise Application Service PKI CA" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="enterprise-application-service-pki-ca" id="bbe283f3-b236-4157-b3db-a8321cdace98" mediaType="application/json" sslKeystore="ncdev-E-trusted-tls-keyStore.jks">
+          <con:restRequest name="enterprise-application-service-pki-ca" id="bbe283f3-b236-4157-b3db-a8321cdace98" mediaType="application/json" sslKeystore="prod-E-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}enterprise-application-service-pki-ca_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="9847dacd-73b9-4ee8-b5f1-1bd55124ad97" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1142,14 +1142,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="root-application-service-root" id="338ccdaa-0d26-428e-8583-a67cf0a62b3d">
         <con:settings/>
         <con:config service="Root Application Service Root" resourcePath="/.well-known/est/Application%20Service%20Root/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="root-application-service-root" id="74ea735d-14b7-42c9-b40a-8d597bf82c3d" mediaType="application/json" sslKeystore="ncdev-R-trusted-tls-keyStore.jks">
+          <con:restRequest name="root-application-service-root" id="74ea735d-14b7-42c9-b40a-8d597bf82c3d" mediaType="application/json" sslKeystore="prod-R-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}root-application-service-root_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="c9478821-dca4-41ea-8d50-e62f90133847" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1171,14 +1171,14 @@ dir.mkdir()</script>
       <con:testStep type="restrequest" name="root-application-service-pki-ca" id="9b028da5-d7d6-4299-9ccf-579ffd0af0be">
         <con:settings/>
         <con:config service="Root Application Service PKI CA" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/cacerts" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="root-application-service-pki-ca" id="f6b3145f-c571-4afc-bb92-0fb97ad776aa" mediaType="application/json" sslKeystore="ncdev-R-trusted-tls-keyStore.jks">
+          <con:restRequest name="root-application-service-pki-ca" id="f6b3145f-c571-4afc-bb92-0fb97ad776aa" mediaType="application/json" sslKeystore="prod-R-trusted-tls-keyStore.jks">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               <con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">${#Project#OutputPath}root-application-service-pki-ca_ssl.p7b</con:setting>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="d55fa893-60de-46bb-b596-4b924a286d6e" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1309,13 +1309,13 @@ outfile4.mkdir()</script>
       <con:testStep type="groovy" name="copy-truststore-files" id="0857d729-f28f-4eb4-b1d8-8bedc31dcb5d">
         <con:settings/>
         <con:config>
-          <script>def cmd1 = "cp /cygdrive/c/soapuitcakeystores/ncdevkeys/root/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Root/trusted-tls-trustStore.jks"
+          <script>def cmd1 = "cp /cygdrive/c/soapuitcakeystores/prodkeys/root/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Root/trusted-tls-trustStore.jks"
 [ 'bash', '-c', cmd1 ].execute()
 
-def cmd2 = "cp /cygdrive/c/soapuitcakeystores/ncdevkeys/enterprise/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Enterprise/trusted-tls-trustStore.jks"
+def cmd2 = "cp /cygdrive/c/soapuitcakeystores/prodkeys/enterprise/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Enterprise/trusted-tls-trustStore.jks"
 [ 'bash', '-c', cmd2 ].execute()
 
-def cmd3 = "cp /cygdrive/c/soapuitcakeystores/ncdevkeys/operator/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Operator/trusted-tls-trustStore.jks"
+def cmd3 = "cp /cygdrive/c/soapuitcakeystores/prodkeys/operator/generated/trusted-tls-trustStore.jks /cygdrive/c/soapuicsrs/Operator/trusted-tls-trustStore.jks"
 [ 'bash', '-c', cmd3 ].execute()</script>
         </con:config>
       </con:testStep>
@@ -1456,7 +1456,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
       <con:testStep type="restrequest" name="root-simple-enroll" id="d8d4943e-a254-462e-a1cb-4ba40480c5a9">
         <con:settings/>
         <con:config service="Root SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="root-simple-enroll" id="00a4801e-bfd8-4d12-afdc-163dc1cee2f4" mediaType="text/xml" sslKeystore="ncdev-R-trusted-tls-keyStore.jks" postQueryString="false">
+          <con:restRequest name="root-simple-enroll" id="00a4801e-bfd8-4d12-afdc-163dc1cee2f4" mediaType="text/xml" sslKeystore="prod-R-trusted-tls-keyStore.jks" postQueryString="false">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
@@ -1466,7 +1466,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request>${#Project#csr}</con:request>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="ed131d62-3759-41de-a171-a530a7e39c25" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1688,7 +1688,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
       <con:testStep type="restrequest" name="enterprise-simple-enroll" id="6566f3f9-d606-43cd-9fb0-53edeb6bc661">
         <con:settings/>
         <con:config service="Enterprise SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="enterprise-simple-enroll" id="8fb265f4-1fa7-4fc4-b275-5366ce481ee9" mediaType="application/xml" sslKeystore="ncdev-E-trusted-tls-keyStore.jks" postQueryString="false">
+          <con:restRequest name="enterprise-simple-enroll" id="8fb265f4-1fa7-4fc4-b275-5366ce481ee9" mediaType="application/xml" sslKeystore="prod-E-trusted-tls-keyStore.jks" postQueryString="false">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
@@ -1698,7 +1698,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request>${#Project#csr}</con:request>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="cc91d1c1-bec6-4995-9bae-dcef78b93459" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -1921,7 +1921,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
       <con:testStep type="restrequest" name="operator-simple-enroll" id="518f78c8-0b18-4009-96c8-7a155f270ef8">
         <con:settings/>
         <con:config service="Operator SimpleEnroll" resourcePath="/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="operator-simple-enroll" id="c9a9d083-ad60-4f47-9336-d71dd58d4c53" mediaType="text/xml" sslKeystore="ncdev-O-trusted-tls-keyStore.jks" postQueryString="false">
+          <con:restRequest name="operator-simple-enroll" id="c9a9d083-ad60-4f47-9336-d71dd58d4c53" mediaType="text/xml" sslKeystore="prod-O-trusted-tls-keyStore.jks" postQueryString="false">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Content-Transfer-Encoding" value="base64"/>
@@ -1931,7 +1931,7 @@ testRunner.testCase.testSuite.project.setPropertyValue("csr",value)</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request>${#Project#csr}</con:request>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/simpleenroll</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="7e76643b-dbb6-4d92-a5ea-7f6835b22b08" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2184,7 +2184,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="62ab0e19-45f0-41b2-be38-414f816f8ffa" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2214,7 +2214,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>http://${#Project#URL}:30401</con:endpoint>
             <con:request/>
-            <con:originalUri>http://grs-preprodkubemaster01/</con:originalUri>
+            <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="95868e89-3313-4950-aedb-68ece06b2456" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2243,7 +2243,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>http://${#Project#URL}:30411</con:endpoint>
             <con:request/>
-            <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="7c840bba-3c91-4dab-b31d-79fb43583682" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2272,7 +2272,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="9e8b9b8b-36b0-4ba4-8e75-3f19f32e0e4f" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2301,7 +2301,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>http://${#Project#URL}:30421</con:endpoint>
             <con:request/>
-            <con:originalUri>http://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>http://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="74e5a193-4d73-4465-800a-9046b18c1d9e" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2331,7 +2331,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="6d1a28fc-f489-4406-ac35-5be4dee17519" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2361,7 +2361,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="18ea22ba-40fc-4ffd-a6b9-2e65d2c5a842" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2390,7 +2390,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30410</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="b11f115f-7281-4947-9a2f-95f2e5619aa8" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2419,7 +2419,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="33b71351-2a79-409f-a3e5-fb957ab94fbe" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2448,7 +2448,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30420</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20PKI%20CA/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="9847dacd-73b9-4ee8-b5f1-1bd55124ad97" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2477,7 +2477,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Root/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="c9478821-dca4-41ea-8d50-e62f90133847" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2506,7 +2506,7 @@ dir.mkdir()</script>
             </con:settings>
             <con:endpoint>https://${#Project#URL}:30400</con:endpoint>
             <con:request/>
-            <con:originalUri>https://grs-preprodkubemaster01/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
+            <con:originalUri>https://uksmso-tca-prod-kubemaster01.trilliant.local/.well-known/est/Application%20Service%20Service%20PKI%20%CA/cacerts</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="d55fa893-60de-46bb-b596-4b924a286d6e" name="Valid HTTP Status Codes">
               <con:configuration>
                 <codes>200</codes>
@@ -2601,7 +2601,7 @@ def cmdd = /openssl pkcs7 -print_certs -in ${ifile} -out 'c:\\soapuidumps-with-p
     </con:property>
     <con:property>
       <con:name>PREPROD</con:name>
-      <con:value>grs-preprodkubemaster01</con:value>
+      <con:value>uksmso-tca-prod-kubemaster01.trilliant.local</con:value>
     </con:property>
     <con:property>
       <con:name>QA</con:name>
@@ -2613,7 +2613,7 @@ def cmdd = /openssl pkcs7 -print_certs -in ${ifile} -out 'c:\\soapuidumps-with-p
     </con:property>
     <con:property>
       <con:name>URL</con:name>
-      <con:value>nc-swe-dev-kubemaster01.trilliant.linux</con:value>
+      <con:value>uksmso-tca-prod-kubemaster01.trilliant.local</con:value>
     </con:property>
     <con:property>
       <con:name>Temp</con:name>
@@ -2621,13 +2621,13 @@ def cmdd = /openssl pkcs7 -print_certs -in ${ifile} -out 'c:\\soapuidumps-with-p
     </con:property>
     <con:property>
       <con:name>csr</con:name>
-      <con:value>MIIBPzCBxQIBADAWMRQwEgYDVQQDEwtQS0kgUm9sZSBSQTB2MBAGByqGSM49AgEG
-BSuBBAAiA2IABFucN/0uztzrn9Rz1AjiY/uMswugLsn3MMiOTHTtmRiFt5aAAH37
-H2+XTLouoSt2jYNeyd9ZaXwFUh7BD5m8VED/MV29yY5KB72yydtL77bc0jXhjYUL
-9ZE6ITaJz5htbKAwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFNmIiS+n74+E
-sS/f5pskVhGO4TAbMAwGCCqGSM49BAMDBQADZwAwZAIwE+UElZhL9tCE4cnLHOgO
-Tgmqc+eg21Qft7yy47P2Np6mRIFCP++PiSYKan2nCZ4nAjBqofCtdc+1mfK6qFm7
-/mrwuxSh2YKHZnkGNpIiVccapwI4W+Y6LmewusKygb9hA+o=</con:value>
+      <con:value>MIIBQDCBxQIBADAWMRQwEgYDVQQDEwtQS0kgUm9sZSBSQTB2MBAGByqGSM49AgEG
+BSuBBAAiA2IABCPPnHd5FbM5DGhBhECoubkrPeNxpiJAb38yBBca2bSPllc2SyQk
+Uh59wA/X5VXpMCOXOydDXorZO+6W9rHLVUT8qUPH0e7DJ5dKOVHdEAEprXqA0OyU
+mG/wKkDpEu9L/6AwMC4GCSqGSIb3DQEJDjEhMB8wHQYDVR0OBBYEFEc78L/Bu4TX
+SPCx0S+VJLjl6FwjMAwGCCqGSM49BAMDBQADaAAwZQIxAImoRa/lgfSGd/yeYUU3
+XtdvJTSJlXniTX66DJuolHixYrPjkitt/4uUwL47e4m1XwIwGt8aKJP1+8xJcza5
+WHg0rclLxwPC+Ai25TwrQZryK8Iq78gncRbEXrt/da/L/MEL</con:value>
     </con:property>
     <con:property>
       <con:name>NCDEV</con:name>
@@ -2648,32 +2648,32 @@ Tgmqc+eg21Qft7yy47P2Np6mRIFCP++PiSYKan2nCZ4nAjBqofCtdc+1mfK6qFm7
   </con:properties>
   <con:wssContainer>
     <con:crypto>
-      <con:source>C:/soapuitcakeystores/ncdevkeys/enterprise/generated/ncdev-E-trusted-tls-keyStore.jks</con:source>
+      <con:source>C:/soapuitcakeystores/prodkeys/enterprise/generated/prod-E-trusted-tls-keyStore.jks</con:source>
       <con:password>123456</con:password>
       <con:type>KEYSTORE</con:type>
     </con:crypto>
     <con:crypto>
-      <con:source>C:/soapuitcakeystores/ncdevkeys/operator/generated/ncdev-O-trusted-tls-keyStore.jks</con:source>
+      <con:source>C:/soapuitcakeystores/prodkeys/operator/generated/prod-O-trusted-tls-keyStore.jks</con:source>
       <con:password>123456</con:password>
       <con:type>KEYSTORE</con:type>
     </con:crypto>
     <con:crypto>
-      <con:source>C:/soapuitcakeystores/ncdevkeys/root/generated/ncdev-R-trusted-tls-keyStore.jks</con:source>
+      <con:source>C:/soapuitcakeystores/prodkeys/root/generated/prod-R-trusted-tls-keyStore.jks</con:source>
       <con:password>123456</con:password>
       <con:type>KEYSTORE</con:type>
     </con:crypto>
     <con:crypto>
-      <con:source>C:/soapuipermanent/ncdev/Enterprise/permanent_enterprise_trusted-tls-keyStore.jks</con:source>
+      <con:source>C:/soapuipermanent/prod/Enterprise/permanent_enterprise_trusted-tls-keyStore.jks</con:source>
       <con:password>123456</con:password>
       <con:type>KEYSTORE</con:type>
     </con:crypto>
     <con:crypto>
-      <con:source>C:/soapuipermanent/ncdev/Root/permanent_root_trusted-tls-keyStore.jks</con:source>
+      <con:source>C:/soapuipermanent/prod/Root/permanent_root_trusted-tls-keyStore.jks</con:source>
       <con:password>123456</con:password>
       <con:type>KEYSTORE</con:type>
     </con:crypto>
     <con:crypto>
-      <con:source>C:/soapuipermanent/ncdev/Operator/permanent_operator_trusted-tls-keyStore.jks</con:source>
+      <con:source>C:/soapuipermanent/prod/Operator/permanent_operator_trusted-tls-keyStore.jks</con:source>
       <con:password>123456</con:password>
       <con:type>KEYSTORE</con:type>
     </con:crypto>
